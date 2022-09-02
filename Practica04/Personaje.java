@@ -4,12 +4,14 @@ public class Personaje{
 
 
 	    public Personaje(String nombre){
+	    	this.nombre = nombre;
 	    	this.edad = 0;
 	    }
 
-	    public int getEdad(String nombre){
-	    	
+	    public int getEdad(){
+	    	return edad;
 	    }
+
 
 	    public boolean setEdad(int Edad){
 	    	  if(edad>0 && edad<120)
