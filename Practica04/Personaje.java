@@ -9,8 +9,10 @@ public class Personaje{
 
 	    public int getEdad(String nombre);
 
-	    public boolean setEdad(Edad);
-	    if 
+	    public boolean setEdad(int Edad);
+	    if(edad>0 && edad<120)
+	    	this.edad = edad;
+	    	return.true;
 
 
 	public void setNombre(String nombre){
