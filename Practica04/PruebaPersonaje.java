@@ -3,7 +3,7 @@ public class PruebaPersonaje{
 		Personaje alumno = new Personaje("Kal El");
 		alumno.setNombre("Kobie Bryant");
 		alumno.saludar();
-		S.o.println(" Nombre: "+alumno.getNombre()+"Edad: " +almuno.getEdad());
+		S.o.println("Nombre: "+alumno.getNombre()+"Edad: " +almuno.getEdad());
 		S.o.println("Modificando el nombre"+alumno.getNombre());
 		alumno.setNombre("Michael Jordan");
 		alumno.Saludar();
