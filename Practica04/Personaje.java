@@ -4,16 +4,19 @@ public class Personaje{
 
 
 	    public Personaje(String nombre){
-	    	this.edad = 0
+	    	this.edad = 0;
 	    }
 
-	    public int getEdad(String nombre);
+	    public int getEdad(String nombre){
+	    	
+	    }
 
-	    public boolean setEdad(int Edad);
-	    if(edad>0 && edad<120)
+	    public boolean setEdad(int Edad){
+	    	  if(edad>0 && edad<120)
 	    	this.edad = edad;
-	    	return.true;
+	    	return true;
 
+	    }
 
 	public void setNombre(String nombre){
 		this.nombre = nombre;

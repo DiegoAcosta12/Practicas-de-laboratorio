@@ -1,6 +1,6 @@
 public class PruebaPersonaje{
 	public static void main(String[]args){
-		Personaje alumno = new Personaje("Kal El");
+			Personaje alumno = new Personaje("Kal El");
 		alumno.setNombre("Kobie Bryant");
 		alumno.saludar();
 		S.o.println("Nombre: "+alumno.getNombre()+"Edad: " +almuno.getEdad());
@@ -15,5 +15,7 @@ public class PruebaPersonaje{
 		if(!alumno.setEdad(130)){
 			S.o.println("Edad sin cambio");
 		}
-		S.o.println("Edad sin cambio");
+		S.o.println("Edad sin cambio");}
+	
+
 }
