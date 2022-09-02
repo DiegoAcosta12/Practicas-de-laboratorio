@@ -1,5 +1,5 @@
 package com.patito.poo1pract.pruebas;
-import com.patito.poo1pract.personajes.*;
+import com.patito.poo1pract.personajes.*
 public class PruebaPersonaje{
 	public static void main(String[]args){
 		Personaje alumno = new Personaje("Kal El");
@@ -11,6 +11,7 @@ public class PruebaPersonaje{
 		if(!alumno.setEdad(30)){
 			System.out.println("Edad sin cambios");
 		}
+
 
 		System.out.println("Nombre:"+alumno.getNombre()+" Edad: "+alumno.getEdad());
 		System.out.println("Modificando edad en 130");
