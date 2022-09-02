@@ -9,12 +9,14 @@ public class PruebaPersonaje{
 		if(!alumno.setEdad(30)){
 			System.out.println("Edad sin cambios");
 		}
+
 		System.out.println("Nombre:"+alumno.getNombre()+"Edad:"+alumno.getEdad());
 		System.out.println("Modificando edad en 130");
 		if(!alumno.setEdad(130)){
-			System.out.println("Edad sin cambio");
+			System.out.println("Edad sin cambios");
 		}
-		System.out.println("Edad sin cambio");}
-	
 
+		System.out.println("Nombre:"+alumno.getNombre()+"Edad:"+alumno.getEdad());
+
+	}
 }
