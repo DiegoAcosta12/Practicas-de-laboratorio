@@ -25,7 +25,7 @@ public class Personaje{
 	    	}
 
 	public void setNombre(String nombre){
-		if(nombre.length() >5 and nombre.length() <25)
+		if(nombre.length() > 5 && nombre.length() <25)
 		this.nombre = nombre;
 	}
 
