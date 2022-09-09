@@ -1,13 +1,13 @@
-package com.patito.poo1pract.personajes;
+package edu.escuela.gamepz.personajes;
 public class Personaje{
 		private String nombre;
 	    private int edad;
   
   
 
-	    public Personaje(String nombre){
+	    public Personaje(String nombre, int edad){
 	    	this.nombre = nombre;
-	    	this.edad = 0;
+	    	this.edad = edad;
 	    }
 
 	    public int getEdad(){
@@ -26,6 +26,7 @@ public class Personaje{
 
 
 	public void setNombre(String nombre){
+		if(nombre.length() >5 and nombre.length() <25)
 		this.nombre = nombre;
 	}
 
