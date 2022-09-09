@@ -24,7 +24,6 @@ public class Personaje{
 
 	    	}
 
-
 	public void setNombre(String nombre){
 		if(nombre.length() >5 and nombre.length() <25)
 		this.nombre = nombre;
@@ -36,5 +35,8 @@ public class Personaje{
 
 	public void saludar(){
 		System.out.println("Hola Alumno de POO "+nombre);
+	}
+	public String getDetalle(){
+		return nombre + "\t" edad;
 	}
 }
