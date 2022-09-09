@@ -37,6 +37,6 @@ public class Personaje{
 		System.out.println("Hola Alumno de POO "+nombre);
 	}
 	public String getDetalle(){
-		return nombre + "\t" edad;
+		return nombre + "\t" +edad;
 	}
 }
