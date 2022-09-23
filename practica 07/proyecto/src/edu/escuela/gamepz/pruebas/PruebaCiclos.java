@@ -22,12 +22,13 @@ public class PruebaCiclos{
 
 		for (int i=n  ;i<m ;i++ ){
 			int ed = (int)(Math.random()*250);
-			if(per01.setEdad)
-
+			if(per01.setEdad(ed)){
+				System.out.println(per01.getDetalle() + "Se modifico la edad");
+				}else{
+					System.out.println("Sin modificacion en edad a"+ ed);	
+				}
+				ed = (int)(Math.random())
+			}
 		}
-
-
-
-
 	}
 }
