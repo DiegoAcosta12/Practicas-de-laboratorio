@@ -44,10 +44,13 @@ public class PruebaCiclos{
 				ed = (int)(Math.random()*200);
 				System.out.println(ed);
 				if(ed>150){
-					System.out.println("El numero");
-					System.out.println("_ ");
+					System.out.println("*** El numero generado es mayor a 150 ***");
+					System.out.println("_ _ _ _ _ _ _ _");
 					continue outfor;
-				}	
-
+				}
+			}while(!per04.setEdad(ed));
+			System.out.println(per04.getDetalle());
+			System.out.println("_ _ _ _ _ _  _");
+		}	
 	}
 }
