@@ -5,7 +5,7 @@ public class Personaje{
   
   
 
-	    public Personaje(String nombre,){
+	    public Personaje(String nombre){
 	    	this.nombre = nombre;
 	    	edad = 0;
 	    }
