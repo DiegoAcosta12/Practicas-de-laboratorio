@@ -14,14 +14,16 @@ public class PruebaCiclos{
 		while(n >= m){
 			n = (int)(Math.random()*100);
 			m = (int)(Math.random()*100);
-		 System.out.println("n =" + n);
-		 System.out.println("m ="+ m);
+		 System.out.println(n);
+		 System.out.println(m);
 		}
 
 
 
-		for (int i=n  ;i<m ;i++ ) {
-			
+		for (int i=n  ;i<m ;i++ ){
+			int ed = (int)(Math.random()*250);
+			if(per01.setEdad)
+
 		}
 
 
