@@ -1,12 +1,13 @@
 package edu.escuela.gamepz.personajes;
 public class Personaje{
 		private String nombre;
-	    private int edad;
+		private int edad;
   
   
 
 	    public Personaje(String nombre,){
 	    	this.nombre = nombre;
+	    	edad = 0;
 	    }
 
 	    public int getEdad(){
