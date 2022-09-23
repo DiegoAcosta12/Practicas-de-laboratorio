@@ -1,5 +1,27 @@
 package edu.escuela.gamepz.pruebas;
 import edu.escuela.gamepz.personajes.*;
+public class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public class PruebaPersonaje{
 	public static void main(String[]args){
 		Personaje per01 = new Personaje("Almendra",200);
