@@ -24,31 +24,30 @@ public class PruebaCiclos{
 			int ed = (int)(Math.random()*250);
 			if(per01.setEdad(ed)){
 				System.out.println(per01.getDetalle() + " Se modifico la edad");
-				}else{
-					System.out.println(" Sin modificacion en edad a"+ ed);	
-				}
-				ed = (int)(Math.random()*250);
-				if(per02.setEdad(ed)){
-					System.out.println(per02.getDetalle() + " Se modifico la edad");
-				 }else{
-				 	System.out.println(" Sin modificacion en edad a"+ ed);
-				}
-				ed = (int)(Math.random()*250);
-				if(per03.setEdad(ed)){
-					System.out.println(per03.getDeralle() + " Se modifico la edad");
-				}else{
-					System.out.println(" Sin modificacion en edad a"+ ed);
-				}
+			}else{
+				System.out.println(per01.getDetalle()+ " Sin modificacion en edad a "+ ed);	
 			}
-
+			ed = (int)(Math.random()*250);
+			if(per02.setEdad(ed)){
+				System.out.println(per02.getDetalle() + " Se modifico la edad");
+			}else{
+				 System.out.println(per02.getDetalle() + " Sin modificacion en edad a "+ ed);
+			}
+			ed = (int)(Math.random()*250);
+			if(per03.setEdad(ed)){
+				System.out.println(per03.getDetalle() + " Se modifico la edad");
+			}else{
+				System.out.println(per03.getDetalle() +" Sin modificacion en edad a "+ ed);
+			}
+			
 			do{
 				ed = (int)(Math.random()*200);
 				System.out.println(ed);
 				if(ed>150){
-					
-				}
-			}
-		}
+					System.out.println("El numero");
+					System.out.println("_ ");
+					continue outfor;
+				}	
 
 	}
 }
