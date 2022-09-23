@@ -1,0 +1,4 @@
+1.- Comparando las salidas de los pasos 6 y 9 si se ejecutara el paso 6 solamente se imprimirían los datos puestos por defecto que van de acuerdo con la práctica, por ejemplo: Ricardo    10.
+Al añadir el paso 9 con la función de numero aleatorio en las personas que indica la practica en vez de generar el numero puesto genera el numero aleatorio de la función, por ejemplo: Ricardo    46.
+
+2.- Explicando el resultado obtenido, dentro del código PruebaPersonaje hay una función que genera un numero aleatorio entre 0 y 1000 de acuerdo con lo que dice la práctica, este numero aleatorio es solamente para per07 y per09 los cuales son Leonel y Ricardo, este número aleatorio se sobrepone ante los números ya puestos anteriormente en la instancia y se muestra solamente el aleatorio,  en cuanto a Almendra, Bianca y Hector, el numero generado es estático ya que dentro del mismo código fue definido y no lleva la función Math.random que es la que genera un numero aleatorio.

@@ -14,9 +14,9 @@ public class PruebaCiclos{
 		while(n >= m){
 			n = (int)(Math.random()*100);
 			m = (int)(Math.random()*100);
-		 System.out.println(n);
-		 System.out.println(m);
 		}
+		System.out.println(n);
+		System.out.println(m);
 
 
 		outfor:
