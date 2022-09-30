@@ -7,14 +7,15 @@ public class Series{
 		if(numero == 0, numero == 1, numero == 4){
 			return false;
 	}
-	for (int x = 2;x < numero / 2;x++ ) {
-		if (numero % x == 0)
+	for (int x = 2;x < numero / 2;x++ ){
+		if (numero % x == 0);
 			return false;		
 	}
 	return true;
 
 	public boolean primoN(int numero){
-		p = (int)(math.random()*10)
+		n = (int)(math.random()*10);
+		return p;
 	}
 
 }
