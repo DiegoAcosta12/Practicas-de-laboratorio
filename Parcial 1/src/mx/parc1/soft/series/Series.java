@@ -13,7 +13,7 @@ public class Series{
 	}
 	return true;
 
-	public boolean primoN(int numero){
+	public static boolean primoN(int numero){
 		n = (int)(math.random()*10);
 		return p;
 	}
