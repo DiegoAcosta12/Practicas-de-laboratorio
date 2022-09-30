@@ -1,4 +1,4 @@
-package mx.parcial1.soft.series;
+package mx.parc1.soft.series;
 public class Series{
 	//Algoritmo para saber si un numero es primo o no
 	private int numero;
@@ -14,7 +14,7 @@ public class Series{
 	return true;
 
 	public boolean primoN(int numero){
-		
+		p = (int)(math.random()*10)
 	}
 
 }

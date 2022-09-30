@@ -1,5 +1,5 @@
-package mx.parcial1.soft.series;
-import mx.parcial.soft.pruebas.*;
+package mx.parc1.soft.pruebas;
+import mx.parc1.soft.Series.*;
 public class TestSeries{
 	public static void main(String[] args) {
 		n = s.genNumero(10);
