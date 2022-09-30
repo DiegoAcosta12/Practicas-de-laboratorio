@@ -12,10 +12,8 @@ public class Series{
 			return false;		
 	}
 	return true;
-
-	public static boolean primoN(int numero){
-		n = (int)(math.random()*10);
-		return p;
 	}
-
+	for (; ; ) {
+		
+	}
 }
