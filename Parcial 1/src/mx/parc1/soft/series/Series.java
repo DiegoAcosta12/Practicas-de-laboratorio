@@ -18,6 +18,8 @@ public class Series{
 		x = numero
 	}
 	return x
+
+	//prueba codigo 
 	public static boolean esPrimo(int numero){
 		int contador = 2;
 		boolean primo = true;
