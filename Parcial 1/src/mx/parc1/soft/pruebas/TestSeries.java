@@ -4,8 +4,8 @@ public class TestSeries{
 	public static void main(String[] args) {
 
 		Series s = new Serie();
-		int m = s.genNumero(100);
-		s.primos(m);
+		//int m = s.genNumero(100);
+		//s.primos(m);
 		int o = s.primoN(m/10);
 		System.out.println(o);
 
