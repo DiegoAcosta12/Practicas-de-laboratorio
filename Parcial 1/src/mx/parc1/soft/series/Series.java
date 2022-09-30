@@ -1,5 +1,4 @@
 package mx.parcial1.soft.series;
-
 public class Series{
 	//Algoritmo para saber si un numero es primo o no
 	private int numero;
@@ -12,6 +11,6 @@ public class Series{
 			return false;		
 	}
 	return true;
-
+	
 
 }
