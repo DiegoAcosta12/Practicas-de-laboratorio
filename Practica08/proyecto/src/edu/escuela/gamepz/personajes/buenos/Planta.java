@@ -20,7 +20,7 @@ public class Planta extends Personaje{
 		super(nombre, 3);
 		escudo = 'A';
 	}
-	
+
 	//Metodos
 	public String getDetalle(){
 		return super.getDetalle()+ " " + escudo;
@@ -42,14 +42,14 @@ public class Planta extends Personaje{
 	}
 	public void decVida(int d){
 		if(escudo == 'A'){
-			super.addVida(d/2);
+			super.addVida(d*2);
 		}else{
 			super.decVida();
 		}
 
 	}
 	public void addVida(){
-		if(escudo =='A'){
+		if(escudo == 'A'){
 			super.addVida(2);
 		}else{
 			super.decVida();

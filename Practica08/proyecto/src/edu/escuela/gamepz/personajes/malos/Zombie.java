@@ -13,7 +13,6 @@ public class Zombie extends Personaje{
 	public Zombie(String nombre){
 		super(nombre,3);
 		this.ataque = false;
-
 	}
 
 	//Metodos
@@ -25,5 +24,35 @@ public class Zombie extends Personaje{
 		return ataque;
 	}
 
-	public 
-}
+	public void decVida(){
+		if(ataque == ){
+			super.decVida(3);
+		}else{
+			super.decVida(2);
+		}
+	}
+
+	public void decVida(int d){
+		if(ataque == ){
+			super.decVida(d*3);
+		}else if(ataque ==){
+			super.decVida(d*2)
+		}
+	}
+
+	public void addVida(){
+		if(ataque == ){
+			super.addVida(0);
+		}else if(ataque == ){
+			super.addVida(0);
+		}
+	}
+
+	public void addVida(int vida){
+		if(ataque == ){
+			super.addVida(vida *3);
+		}else if(ataque ==){
+			super.addVida(0);
+		}//llave if
+	}//llave metodo
+}//llave clase principal
