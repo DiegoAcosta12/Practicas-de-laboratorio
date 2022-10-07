@@ -16,6 +16,11 @@ public class Planta extends Personaje{
 
 	}
 	public Planta(String nombre){
+		super(nombre, 3);
+		escudo = 'A';
+	}
+
+	public String getDetalle(){
 
 	}
 
@@ -26,6 +31,7 @@ public class Planta extends Personaje{
 	}
 	
 	public void decVida(){
+		if (escudo == 'A')
 
 	}
 	public void decVida(int d){

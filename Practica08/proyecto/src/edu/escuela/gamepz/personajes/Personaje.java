@@ -4,12 +4,7 @@ public class Personaje{
 		private int vida;
   
 	    public Personaje(String nombre){
-	    	if(vida > 0){
-	    		this.vida = 0
-	    	}
-	    	if(vida < 99){
-	    		this.vida = 99
-	    	}
+
 	    }
 
 	    public Personaje(String nombre, int vida){
@@ -17,7 +12,7 @@ public class Personaje{
 	    }
 
 	    public boolean setVida(int vida){
-	    	if(vida>0 && vida<120){
+	    	if(vida>0 && vida<100){
 	    	this.vida = vida;
 	    	return true;
 	     	}
@@ -46,10 +41,12 @@ public class Personaje{
 	}
 
 	public void decVida(){
+		
 
 	}
 
 	public void decVida(int d){
+		vida -= d;
 
 	}
 
