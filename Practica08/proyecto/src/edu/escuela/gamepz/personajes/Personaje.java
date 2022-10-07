@@ -61,7 +61,6 @@ public class Personaje{
 		if(!setVida(vida)){
 			vida = -=1;
 		}
-
 	}
 
 	public void addVida(int add){
@@ -69,6 +68,5 @@ public class Personaje{
 		if(!setVida(vida)){
 			this.vida -= add;
 		}
-
 	}
 }

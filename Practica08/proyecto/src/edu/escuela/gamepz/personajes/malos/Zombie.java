@@ -41,16 +41,13 @@ public class Zombie extends Personaje{
 
 	public void addVida(){
 		if(ataque){
-		}else{
-			super.addVida(0);
+			super.addVida(3);
 		}
 	}
 
-	public void addVida(int vida){
-		if(ataque == true){
-			super.addVida(vida *3);
-		}else if(ataque == false){
-			super.addVida(0);
+	public void addVida(int add){
+		if(ataque){
+			super.addVida(3*add);
 		}//llave if
 	}//llave metodo
 }//llave clase principal
