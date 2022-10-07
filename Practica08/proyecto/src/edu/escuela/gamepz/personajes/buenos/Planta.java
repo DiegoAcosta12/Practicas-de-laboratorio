@@ -6,13 +6,15 @@ public class Planta extends Personaje{
 
 	}
 	public Planta(String nombre, char escudo){
-		
+
 	}
+	public Planta(String nombre, int vida){
 
+	}
+	public Planta(String nombre){
 
-
-
-
+	}
+	
 
 	public char getEscudo(){
 

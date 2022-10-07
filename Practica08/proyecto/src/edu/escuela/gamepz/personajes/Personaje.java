@@ -4,7 +4,12 @@ public class Personaje{
 		private int vida;
   
 	    public Personaje(String nombre){
-	    	if()
+	    	if(vida > 0){
+	    		this.vida = 0
+	    	}
+	    	if(vida < 99){
+	    		this.vida = 99
+	    	}
 	    }
 
 	    public Personaje(String nombre, int vida){
@@ -35,7 +40,7 @@ public class Personaje{
 	public void saludar(){
 		System.out.println("Hola Alumno de POO "+nombre);
 	}
-	
+
 	public String getDetalle(){
 		return nombre + "\t" +vida;
 	}
@@ -49,6 +54,10 @@ public class Personaje{
 	}
 
 	public void addVida(){
+
+	}
+
+	public void addVida(int d){
 
 	}
 }
