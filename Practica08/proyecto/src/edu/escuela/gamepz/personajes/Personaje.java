@@ -7,13 +7,11 @@ public class Personaje{
 
 	    public Personaje(String nombre){
 	    	this.nombre = nombre;
-	    	vida = 0;
 	    }
 
 	    public int getVida(){
 	    	return vida;
 	    }
-
 
 	    public boolean setVida(int vida){
 	    	if(vida>0 && vida<99){
