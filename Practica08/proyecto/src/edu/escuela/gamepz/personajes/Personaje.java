@@ -4,10 +4,13 @@ public class Personaje{
 		private int vida;
   
 	    public Personaje(String nombre){
-
+	    	this.nombre = nombre;
+	    	this.vida =vida;
 	    }
 
 	    public Personaje(String nombre, int vida){
+	    	this.nombre = nombre;
+	    	vida = 3;
 
 	    }
 
@@ -41,20 +44,32 @@ public class Personaje{
 	}
 
 	public void decVida(){
-		
-
+		vida -=1;
+		if(vida<0){
+			vida = 0;
+		}
 	}
 
 	public void decVida(int d){
 		vida -= d;
-
+		if(vida<0){
+			vida = 0;
+		}
 	}
 
 	public void addVida(){
+		vida +=1;
+		if(vida>99){
+			vida = 99;
+		}
 
 	}
 
 	public void addVida(int d){
+		vida +=d;
+		if(vida>99){
+			vida = 99;
+		}
 
 	}
 }
