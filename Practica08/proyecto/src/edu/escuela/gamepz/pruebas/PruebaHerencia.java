@@ -13,19 +13,16 @@ public class PruebaHerencia{
 		Personaje zom03 = new Personaje ("Eduardo",100);
 
 		Personaje personajes [] = new Personaje[9];
-		personajes [1] = per01
-		personajes [2] = per02
-		personajes [3] = plan01
-		personajes [4] = plan02
-		personajes [5] = plan03
-		personajes [6] = plan04
-		personajes [7] = zom01
-		personajes [8] = zom02
-		personajes [9] = zom03
+		personajes [1] = per01;
+		personajes [2] = per02;
+		personajes [3] = plan01;
+		personajes [4] = plan02;
+		personajes [5] = plan03;
+		personajes [6] = plan04;
+		personajes [7] = zom01;
+		personajes [8] = zom02;
+		personajes [9] = zom03;
 
-		for ( : ) {
-			
-		}
 
 
 

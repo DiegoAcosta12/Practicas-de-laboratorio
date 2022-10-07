@@ -3,15 +3,14 @@ public class Personaje{
 		private String nombre;
 		private int vida;
   
-	    public Personaje(String nombre){
+	    public Personaje(String nombre, int vida){
 	    	this.nombre = nombre;
 	    	this.vida =vida;
 	    }
 
-	    public Personaje(String nombre, int vida){
+	    public Personaje(String nombre){
 	    	this.nombre = nombre;
 	    	vida = 3;
-
 	    }
 
 	    public boolean setVida(int vida){
@@ -45,30 +44,30 @@ public class Personaje{
 
 	public void decVida(){
 		vida -=1;
-		if(vida<0){
-			vida = 0;
+		if(!setVida(vida)){
+			this.vida += 1;
 		}
 	}
 
 	public void decVida(int d){
 		vida -= d;
-		if(vida<0){
-			vida = 0;
+		if(!setVida(vida)){
+			this.vida += d;
 		}
 	}
 
 	public void addVida(){
-		vida +=1;
-		if(vida>99){
-			vida = 99;
+		vida += 1;
+		if(!setVida(vida)){
+			vida = -=1;
 		}
 
 	}
 
-	public void addVida(int d){
-		vida +=d;
-		if(vida>99){
-			vida = 99;
+	public void addVida(int add){
+		vida += add;
+		if(!setVida(vida)){
+			this.vida -= add;
 		}
 
 	}
