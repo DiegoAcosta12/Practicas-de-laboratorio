@@ -7,7 +7,6 @@ public class Campo extends Casa{
 		super(tipo,hab,costo);
 		piscina[0] = ancho;
 		piscina[1] = largo;
-
 	}
 
 	public int hashcode(){

@@ -10,14 +10,15 @@ public class Casa{
 	}
 
 	public Casa(String tipo){
-		this(tipo,2,20000000);
+		this(tipo,2,2000000);
 	}
 	public int hashcode(){
-		return(int)tipo.hashcode()*hab*costo;
+		return(int)tipo.hashcode()(*hab*costo);
 	}
 
 	public boolean equals(Object o){
 		if(o != null && o instanceof Casa){
+			
 		}
 	}
 
