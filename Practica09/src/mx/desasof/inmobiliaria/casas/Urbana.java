@@ -8,18 +8,23 @@ public class Urbana extends Casa{
 	}
 
 	public Urbana(String tipo, int banos){
-		super(tipo,banos);
+		super(tipo);
+		this.banos = banos;
 	}
 
 	public int hashcode(){
-		return super.hashcode()*
+		return super.hashCode()*banos*23;
 	}
 
 	public boolean equals(Object u){
+		if(super.equals(u) && u instanceof Urbana){
 
+			return true;
+		}
+		return false;
 	}
 
 	public String toString(){
-		return
+		return super.toString() +" " + banos;
 	}
 }

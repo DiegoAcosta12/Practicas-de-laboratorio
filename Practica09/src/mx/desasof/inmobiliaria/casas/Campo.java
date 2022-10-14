@@ -1,27 +1,27 @@
 package mx.desasof.inmobiliaria.casas;
 
 public class Campo extends Casa{
-	private float piscina = [2]
+	private float[] piscina = new float[2];
 
-	public campo(String tipo,int hab,float costo){
+	public Campo(String tipo,int hab,float costo){
 		super(tipo,hab,costo);
 		piscina[0] = ancho;
 		piscina[1] = largo;
 	}
 
 	public int hashcode(){
-		return super.hashcode()*(piscina[0])*(piscina[1])/5;
+		return super.hashCode()*(piscina[0])*(piscina[1])/5;
 	}
 
 	public boolean equals(Object c){
-		if(super.equals(c) && c instanceof campo){
+		if(super.equals(c) && c instanceof Campo){
 			return true;
 		}
 		return false;
 	}
 
 	public String toString(){
-		return tipo + " " + hab + " " + costo + " " + ancho + " " + largo;
+		return super.toString() + " " + piscina[0] + " " + piscina[1];
 	}
 
 }
