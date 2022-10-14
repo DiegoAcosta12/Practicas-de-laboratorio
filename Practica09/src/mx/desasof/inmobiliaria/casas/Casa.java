@@ -1,4 +1,4 @@
-package mx.inmobiliaria.casas;
+package mx.desasof.inmobiliaria.casas;
 
 public class Casa{
 	private String tipo;
@@ -10,7 +10,7 @@ public class Casa{
 	}
 
 	public Casa(String tipo){
-		this(tipo,2,200000);
+		this(tipo,2,20000000);
 	}
 	public int hashcode(){
 		return(int)tipo.hashcode()*hab*costo;
@@ -18,12 +18,10 @@ public class Casa{
 
 	public boolean equals(Object o){
 		if(o != null && o instanceof Casa){
-			
-
 		}
 	}
 
 	public String toString(){
-		return
+		return tipo + " " + hab + " " + costo;
 	}
 }
