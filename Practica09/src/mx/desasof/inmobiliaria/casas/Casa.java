@@ -15,7 +15,7 @@ public class Casa{
 		this(tipo,2,2000000);
 	}
 	public int hashcode(){
-		return(int)tipo.hashCode()*hab*costo;
+		return(tipo.hashCode()*hab)*((int)costo);
 	}
 
 	public boolean equals(Object o){
@@ -24,8 +24,8 @@ public class Casa{
 			if(tipo.equals(h.tipo) && costo == h.costo){
 				return true;
 			}
-			return false;
 		}
+		return false;
 	}
 
 	public String toString(){
