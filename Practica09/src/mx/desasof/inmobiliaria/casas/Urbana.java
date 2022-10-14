@@ -2,7 +2,7 @@ package mx.desasof.inmobiliaria.casas;
 public class Urbana extends Casa{
 	private int banos;
 
-	public Urbana(String tipo, int hab,float costo){
+	public Urbana(String tipo, int hab,float costo,int banos){
 		super(tipo,hab,costo);
 		this.banos = banos;
 	}
@@ -18,7 +18,6 @@ public class Urbana extends Casa{
 
 	public boolean equals(Object u){
 		if(super.equals(u) && u instanceof Urbana){
-
 			return true;
 		}
 		return false;
