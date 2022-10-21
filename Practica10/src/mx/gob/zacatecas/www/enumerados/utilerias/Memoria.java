@@ -1,3 +1,4 @@
+package mx.gob.zacatecas.www.utilerias.Memoria;
 public enum Memoria{
 	DDR("Memoria ram",166,30),
 	DDR2("Laptop",240,35),
@@ -8,7 +9,7 @@ public enum Memoria{
 	float velocidad;
 	int pines;
 
-	private memoria(String tipo,float velocidad,int pines){
+	private Memoria(String tipo,float velocidad,int pines){
 		this.tipo = tipo;
 		this.velocidad = velocidad;
 		this.pines = pines;

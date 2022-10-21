@@ -1,16 +1,17 @@
+package mx.gob.zacatecas.www.utilerias.Tipo;
 public enum Tipo{
 	SERVER("Servidor"),
 	WORKSTATON("Estacion de trabajo"),
 	DEKTOP("Escritorio"),
 	LAPTOP("Portatil");
 
-	char type;
+	String type;
 
-	private Tipo(char type){
+	private Tipo(String type){
 		this.type = type;
 	}
 
-	public char getType(){
+	public String getType(){
 		return type;
 	}
 }
