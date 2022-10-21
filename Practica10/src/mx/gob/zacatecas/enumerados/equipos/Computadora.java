@@ -1,6 +1,5 @@
-package mx.gob.zacatecas.www.equipos.Computadora;
-import mx.gob.zacatecas.www.utilerias.Memoria;
-import mx.gob.zacatecas.www.utilerias.Tipo;
+package mx.gob.zacatecas.enumerados.equipos.Computadora;
+import mx.gob.zacatecas.enumerados.utilerias.*;
 public class Computadora{
 	private String marca;
 	private Tipo tipo;
@@ -13,6 +12,6 @@ public class Computadora{
 	}
 
 	public String toString(){
-		return marca + " "+ tipo + " " + velocidad + " " + pines + " " + type;
+		return marca + " " + tipo + " " + memoria + " " + memoria.getTipo() + " " + memoria.getVelocidad() + " " + memoria.getPines() + " " + tipo.getType();
 	}
 }
