@@ -1,8 +1,9 @@
 package mx.gob.zacatecas.enumerados.pruebas;
 import mx.gob.zacatecas.enumerados.utilerias.*;
+import mx.gob.zacatecas.enumerados.equipos.*;
 public class Pruebacomputadora{
 	public static void main(String[] args) {
-		Computadora c1 = new Computadora("Lenovo",tipo.getype(),DDR2);
+		Computadora c1 = new Computadora("Lenovo",LAPTOP,DDR2);
 		Computadora c2 = new Computadora("HP",DESKTOP,DDR4);
 		Smallfactor s1 = new Smallfactor("Dell",WORKSTATION,DDR3,true);
 		Smallfactor s2 = new Smallfactor("Acer",SERVER,DDR,false);
@@ -11,5 +12,5 @@ public class Pruebacomputadora{
 		for (Computadora tmp : computadoras) {
 			System.out.println(tmp);
 		}
-	}
+	}	
 }
