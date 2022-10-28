@@ -23,18 +23,19 @@ public class PruebaHerencia {
             int al = (int)(Math.random()*100);
             if (p instanceof Planta){
                 Planta tmp = (Planta) p;
-                System.out.println("Soy planta "+ ((planta)tmp).getEscudo());
+                System.out.println("Soy planta "+ ((Planta)tmp).getEscudo());
                 tmp.addVida(al);
             }
             if (p instanceof Zombie){
                 Zombie tmp = (Zombie) p;
-                System.out.println("Soy zombie "+ ((zombie)tmp).getAtaque());
+                System.out.println("Soy zombie "+ ((Zombie)tmp).getAtaque());
                 ((Zombie)tmp).comer();
                 tmp.decVida(al);
             }
             System.out.println(al);
-            System.out.println(tmp.toString());
+            System.out.println(p.toString());
             System.out.println("***** Objeto" + i + "*****");
+            i+=1;
         }
     }
 }
