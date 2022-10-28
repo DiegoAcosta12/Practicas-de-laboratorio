@@ -1,5 +1,4 @@
 package edu.escuela.gamepz.personajes;
-
 public abstract class Personaje {
     private String nombre;
     protected int vida;

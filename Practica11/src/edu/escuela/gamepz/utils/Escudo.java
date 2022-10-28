@@ -1,4 +1,6 @@
 package edu.escuela.gamepz.utils;
+import edu.escuela.gamepz.personajes.Personaje;
+import edu.escuela.gamepz.utils.Muerto;
 public enum Escudo{
 	SUPER(0),
 	MEDIO(1),
