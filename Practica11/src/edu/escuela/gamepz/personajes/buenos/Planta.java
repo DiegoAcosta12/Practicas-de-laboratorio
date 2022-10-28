@@ -27,8 +27,7 @@ public class Planta extends Personaje{
         return super.toString() + "\t" + Escudo.getNivel();
     }
     public void decVida(){
-
-
+        vida = vida - Escudo.getNivel();
 
         /*
         if(escudo == 'A'){
@@ -37,9 +36,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void decVida(int dec){
-
-
-
+        vida = vida - Escudo.getNivel()*dec;
 
         /*
         if(escudo == 'A'){
@@ -48,8 +45,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void addVida(){
-
-
+        vida = vida + Escudo.getNivel();
 
         /*if(escudo == 'A'){
             super.addVida(2);
@@ -57,9 +53,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void addVida(int add){
-
-
-
+        vida = vida + Escudo.getNivel()*add;
 
         /*
         if(escudo == 'A'){
