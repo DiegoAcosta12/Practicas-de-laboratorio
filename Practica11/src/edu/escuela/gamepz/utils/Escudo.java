@@ -5,8 +5,7 @@ public enum Escudo{
 	NULO(3);
 	private int nivel;
 
-	private enum(int nivel){
-		this.nivel = nivel
+	private Escudo(int nivel){
+		this.nivel = nivel;
 	}
-
 }

@@ -1,5 +1,6 @@
 package edu.escuela.gamepz.personajes.buenos;
 import edu.escuela.gamepz.personajes.Personaje;
+import edu.escuela.gamepz.utils.Escudo;
 
 public class Planta extends Personaje{
     private Escudo escudo;
@@ -12,11 +13,13 @@ public class Planta extends Personaje{
     }
     public Planta(String nombre, int vida){
         this(nombre, vida, 'A');
+        escudo = null;
     }
     public Planta(String nombre){
         this(nombre, 3, 'A');
+        escudo = null;
     }
-    public char getEscudo() {
+    public Escudo getEscudo(){
         return escudo;
     }
     public String toString(){
