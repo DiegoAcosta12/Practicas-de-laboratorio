@@ -13,7 +13,7 @@ public class Planta extends Personaje{
         this(nombre, 3, escudo);
     }
     public Planta(String nombre, int vida){
-        this(nombre, vida);
+        this(nombre,vida);
         escudo = Escudo.NULO;
     }
     public Planta(String nombre){
@@ -24,10 +24,10 @@ public class Planta extends Personaje{
         return escudo;
     }
     public String toString(){
-        return super.toString() + "\t" + Escudo.getNivel();
+        return super.toString() + "\t" + escudo.getNivel();
     }
     public void decVida(){
-        vida = vida - Escudo.getNivel();
+        vida = (vida - escudo.getNivel());
 
         /*
         if(escudo == 'A'){
@@ -36,7 +36,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void decVida(int dec){
-        vida = vida - Escudo.getNivel()*dec;
+        vida = (vida - escudo.getNivel()*dec);
 
         /*
         if(escudo == 'A'){
@@ -45,7 +45,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void addVida(){
-        vida = vida + Escudo.getNivel();
+        vida = (vida + escudo.getNivel());
 
         /*if(escudo == 'A'){
             super.addVida(2);
@@ -53,7 +53,7 @@ public class Planta extends Personaje{
         }*/
     }
     public void addVida(int add){
-        vida = vida + Escudo.getNivel()*add;
+        vida = (vida + escudo.getNivel()*add);
 
         /*
         if(escudo == 'A'){
@@ -62,3 +62,4 @@ public class Planta extends Personaje{
         }*/
     }
 }
+    
