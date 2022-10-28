@@ -19,7 +19,7 @@ public class Planta extends Personaje{
     public char getEscudo() {
         return escudo;
     }
-    public String getDetalle(){
+    public String toString(){
         return super.getDetalle() + "\t" + escudo;
     }
     public void decVida(){

@@ -1,5 +1,4 @@
 package edu.escuela.gamepz.personajes.malos;
-
 import edu.escuela.gamepz.personajes.Personaje;
 
 public class Zombie extends Personaje{
@@ -17,7 +16,7 @@ public class Zombie extends Personaje{
     public boolean getAtaque() {
         return ataque;
     }
-    public String getDetalle(){
+    public String toString(){
         return super.getDetalle() + "\t" + ataque;
     }
     public void decVida(){

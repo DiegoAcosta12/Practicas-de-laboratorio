@@ -2,7 +2,7 @@ package edu.escuela.gamepz.personajes;
 
 public abstract class Personaje {
     private String nombre;
-    private int vida;
+    protected int vida;
 
     public Personaje(String nombre, int vida){
         this.nombre = nombre;
@@ -32,7 +32,7 @@ public abstract class Personaje {
         }
         return false;
     }
-    public String getDetalle(){
+    public String toString(){
         return nombre + "\t" + vida;
     }
     public void decVida(){
