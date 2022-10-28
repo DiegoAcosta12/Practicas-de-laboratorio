@@ -13,11 +13,11 @@ public class Planta extends Personaje{
         this(nombre, 3, escudo);
     }
     public Planta(String nombre, int vida){
-        this(nombre,vida);
+        super(nombre,vida);
         escudo = Escudo.NULO;
     }
     public Planta(String nombre){
-        this(nombre, 3);
+        super(nombre, 3);
         escudo = Escudo.NULO;
     }
     public Escudo getEscudo(){

@@ -5,4 +5,5 @@ public class Muerto{
 	private Muerto(String MAX_ZOMBIES,10){
 		this.MAX_ZOMBIES = MAX_ZOMBIES;
 	}
+	Private void getComer(){}
 }
