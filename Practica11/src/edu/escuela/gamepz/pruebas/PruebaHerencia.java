@@ -7,32 +7,34 @@ import edu.escuela.gamepz.utils.*;
 
 public class PruebaHerencia {
     public static void main(String[] args) {
-        Personaje per01 = new Personaje("David", 100);
-        Personaje per02 = new Personaje("Bianca");
-        Planta plan01 = new Planta("Fabian", 10, 'B');
+        Personaje per01 = new Planta("David", 100);
+        Personaje per02 = new Zombie("Bianca");
+        Planta plan01 = new Planta("Fabian", 10, Escudo.MEDIO);
         Planta plan02 = new Planta("Almendra", 50);
-        Planta plan03 = new Planta("Ricardo", 'C');
+        Planta plan03 = new Planta("Ricardo", Escudo.BAJO);
         Planta plan04 = new Planta("Silvia");
         Zombie zom01 = new Zombie("Armando", 80, false);
         Zombie zom02 = new Zombie("Josseline", true);
         Zombie zom03 = new Zombie("Eduardo");
         Personaje[] personajes = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
-        int index = 0;
+        int i = 0;
         for (Personaje p : personajes) {
             System.out.println(p.toString());
-            int al = (int)(Math.random()*101+1);
+            int al = (int)(Math.random()*100);
             if (p instanceof Planta){
                 Planta tmp = (Planta) p;
-                System.out.println("Soy planta "+ tmp.getEscudo());
+                System.out.println("Soy planta "+ ((planta)tmp).getEscudo());
                 tmp.addVida(al);
             }
             if (p instanceof Zombie){
                 Zombie tmp = (Zombie) p;
-                System.out.println("Soy zombie "+ tmp.getAtaque());
+                System.out.println("Soy zombie "+ ((zombie)tmp).getAtaque());
+                ((Zombie)tmp).comer();
                 tmp.decVida(al);
             }
-            System.out.println(al + "\n" + p.toString() + "\n");
-            System.out.println("*****Objeto " + ++index + "*****");
+            System.out.println(al);
+            System.out.println(tmp.toString());
+            System.out.println("***** Objeto" + i + "*****");
         }
     }
 }
