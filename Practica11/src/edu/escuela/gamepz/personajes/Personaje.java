@@ -35,28 +35,11 @@ public abstract class Personaje {
     public String toString(){
         return nombre + "\t" + vida;
     }
-    public void decVida(){
-        vida -= 1;
-        if (!setVida(vida)){
-            this.vida += 1;
-        }
-    }
-    public void decVida(int dec){
-        vida -= dec;
-        if (!setVida(vida)){
-            this.vida += dec;
-        }
-    }
-    public void addVida(){
-        vida += 1;
-        if (!setVida(vida)){
-            this.vida -= 1;
-        }
-    }
-    public void addVida(int add){
-        vida += add;
-        if (!setVida(vida)){
-            this.vida -= add;
-        }
-    }
+    public abstract void decVida();
+
+    public abstract void decVida(int dec);
+
+    public abstract void addVida();
+
+    public abstract void addVida(int add);
 }

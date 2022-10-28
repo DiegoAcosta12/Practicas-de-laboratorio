@@ -18,7 +18,7 @@ public class PruebaHerencia {
         Personaje[] personajes = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
         int index = 0;
         for (Personaje p : personajes) {
-            System.out.println(p.getDetalle());
+            System.out.println(p.toString());
             int al = (int)(Math.random()*101+1);
             if (p instanceof Planta){
                 Planta tmp = (Planta) p;
@@ -30,7 +30,7 @@ public class PruebaHerencia {
                 System.out.println("Soy zombie "+ tmp.getAtaque());
                 tmp.decVida(al);
             }
-            System.out.println(al + "\n" + p.getDetalle() + "\n");
+            System.out.println(al + "\n" + p.toString() + "\n");
             System.out.println("*****Objeto " + ++index + "*****");
         }
     }
