@@ -3,7 +3,7 @@ public class PersException extends Exception{
 	private char msg;
 	private int poss;
 	public PersException(char msg, int poss){
-		super (msg);
+		this.msg = msg;
 		this.poss = poss;
 	}
 	public int getPoss(){
