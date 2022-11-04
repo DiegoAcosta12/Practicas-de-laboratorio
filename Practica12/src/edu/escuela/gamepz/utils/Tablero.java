@@ -17,8 +17,9 @@ public class Tablero{
 			}else{
 				System.out.println(contar +" "+ tmp);
 			}
-			System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");	
-		}contar+=1;	
+			contar+=1;		
+		}
+		System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");
 	}
 	public static void insertar(Personaje p,int poss)throws PersException{
 		if(poss < 0 || poss >= MAX_SIZE) {
