@@ -2,7 +2,7 @@ package edu.escuela.gamepz.pruebas;
 import edu.escuela.gamepz.personajes.buenos.Planta;
 import edu.escuela.gamepz.personajes.malos.Zombie;
 import edu.escuela.gamepz.personajes.Personaje;
-import edu.escuela.gamepz.utils.*;
+import edu.escuela.gamepz.utils.*	;
 public class PruebaTablero{
 	public static void main(String[] args) {
 		Personaje per01 = new Planta("David", 100);
