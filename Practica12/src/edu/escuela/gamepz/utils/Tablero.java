@@ -8,7 +8,7 @@ public class Tablero{
 	private Tablero(int MAX_SIZE){
 		this.MAX_SIZE = MAX_SIZE;
 	} 
-	public static void Mostrar(){
+	public static void mostrar(){
 		System.out.println("\nInicio * * * Contenido del arreglo en el tablero\n");
 		int contar = 0;
 		for (Personaje tmp:personajes ) {

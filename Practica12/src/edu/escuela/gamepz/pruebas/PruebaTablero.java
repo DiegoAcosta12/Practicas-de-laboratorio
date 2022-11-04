@@ -16,11 +16,22 @@ public class PruebaTablero{
         Zombie zom03 = new Zombie("Eduardo");
         Personaje[] datos = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
         for (Personaje p :datos) {
-        	int poss =(int)(Math.random()*20 - 5);
+        	int poss =(int)(Math.random()*20-5);
         	try{
-        		
+        		Tablero.insertar(p,poss);
+        	}catch(PersException pe){
+        		System.out.println(pe.getMessage() + " " + pe.getPoss());
         	}
-        	
-        }
-	}
-}
+        }//foreach
+        Tablero.mostrar();
+        int i = 0;
+        for (i = 0;i < Tablero.MAX_SIZE;i++ ) {
+        	int poss = (int)(Math.random()*20-5);
+        	try{
+        		Tablero.borrar(poss);
+        	}catch(PersException pe){
+        		System.out.println(pe.getMessage() + " " +pe.getPoss());
+        	}
+        }//for clasico
+	}//main
+}//clase
