@@ -10,26 +10,32 @@ public class Tablero{
 	} 
 	public void Mostrar(){
 		System.out.println("\nInicio * * * Contenido del arreglo en el tablero\n");
-		int contar = 0
+		int contar = 0;
 		for (Personaje tmp:personajes ) {
 			if(tmp == null ){
-				System.out.println(tmp + "- - -");
+				System.out.println(contar + "- - -");
 			}else{
-				System.out.println(tmp + " " + personajes);
+				System.out.println(contar + " " + personajes);
 			}
 			contar++;
 			System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");
 		}
 	}
 	public void insertar(Personaje p, int poss)throws PersException{
-		if(poss < 0 or poss > MAX_SIZE){
+		if(poss < 0 || poss > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}
-		Personaje[poss] = p;
+		personajes[poss] = p;
 	}
+
 	public void borrar(int poss)throws PersException{
-		if(poss < 0 or poss > MAX_SIZE){
+		if(poss < 0 || poss > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}
+		if(personajes[poss] == null){
+			throw new PersException("Si personaje para borrar",poss);	
+		}
+		personajes[poss] = null;
+
 	}
 }
