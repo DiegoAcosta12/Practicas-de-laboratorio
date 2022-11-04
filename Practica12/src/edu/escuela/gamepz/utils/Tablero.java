@@ -13,23 +13,23 @@ public class Tablero{
 		int contar = 0;
 		for (Personaje tmp:personajes ) {
 			if(tmp == null ){
-				System.out.println(contar + "- - -");
+				System.out.println(personajes[contar] + "- - -");
 			}else{
-				System.out.println(contar + " " + personajes);
+				System.out.println(personajes[contar] +" "+ personajes);
 			}
-			contar++;
 			System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");
+			contar+=1;
 		}
 	}
 	public static void insertar(Personaje p,int poss)throws PersException{
-		if(poss < 0 || poss > MAX_SIZE) {
+		if(poss < 0 || poss >= MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}
 		personajes[poss] = p;
 	}
 
 	public static void borrar(int poss)throws PersException{
-		if(poss < 0 || poss > MAX_SIZE) {
+		if(poss < 0 || poss >= MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}
 		if(personajes[poss] == null){
