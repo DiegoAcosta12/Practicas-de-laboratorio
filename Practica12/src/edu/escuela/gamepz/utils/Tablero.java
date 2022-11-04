@@ -3,12 +3,12 @@ import edu.escuela.gamepz.personajes.Personaje;
 import edu.escuela.gamepz.utils.PersException;
 public class Tablero{
 	public static int MAX_SIZE = 10;
-	Personaje[] personajes = new Personaje[MAX_SIZE];
+	public static Personaje[] personajes = new Personaje[MAX_SIZE];
 
 	private Tablero(int MAX_SIZE){
 		this.MAX_SIZE = MAX_SIZE;
 	} 
-	public void Mostrar(){
+	public static void Mostrar(){
 		System.out.println("\nInicio * * * Contenido del arreglo en el tablero\n");
 		int contar = 0;
 		for (Personaje tmp:personajes ) {
@@ -21,14 +21,14 @@ public class Tablero{
 			System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");
 		}
 	}
-	public void insertar(Personaje p, int poss)throws PersException{
+	public static void insertar(Personaje p,int poss)throws PersException{
 		if(poss < 0 || poss > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}
 		personajes[poss] = p;
 	}
 
-	public void borrar(int poss)throws PersException{
+	public static void borrar(int poss)throws PersException{
 		if(poss < 0 || poss > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",poss);
 		}

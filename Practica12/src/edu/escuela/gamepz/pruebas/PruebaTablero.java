@@ -1,7 +1,8 @@
 package edu.escuela.gamepz.pruebas;
-import edu.escuela.gamepz.utils.PersException;
-import edu.escuela.gamepz.utils.Tablero;
+import edu.escuela.gamepz.personajes.buenos.Planta;
+import edu.escuela.gamepz.personajes.malos.Zombie;
 import edu.escuela.gamepz.personajes.Personaje;
+import edu.escuela.gamepz.utils.*;
 public class PruebaTablero{
 	public static void main(String[] args) {
 		Personaje per01 = new Planta("David", 100);
@@ -14,5 +15,12 @@ public class PruebaTablero{
         Zombie zom02 = new Zombie("Josseline", true);
         Zombie zom03 = new Zombie("Eduardo");
         Personaje[] datos = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
+        for (Personaje p :datos) {
+        	int poss =(int)(Math.random()*20 - 5);
+        	try{
+        		
+        	}
+        	
+        }
 	}
 }
