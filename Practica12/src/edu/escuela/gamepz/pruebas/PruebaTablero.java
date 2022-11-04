@@ -24,8 +24,7 @@ public class PruebaTablero{
         	}
         }//foreach
         Tablero.mostrar();
-        int i;
-        for (i = 0;i < Tablero.MAX_SIZE;i++ ) {
+        for (int i = 0;i < Tablero.MAX_SIZE;i++ ) {
         	int poss = (int)(Math.random()*20-5);
         	try{
         		Tablero.borrar(poss);
