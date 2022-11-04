@@ -7,15 +7,21 @@ public class Tablero{
 	private Tablero(int MAX_SIZE){
 		this.MAX_SIZE = MAX_SIZE;
 	} 
-	public static void Mostrar(){
+	public void Mostrar(){
 		System.out.println("\nInicio * * * Contenido del arreglo en el tablero\n");
 		for (Personaje tmp:personajes ) {
-			if(tmp = null ){
-				System.out.println();
+			if(tmp == null ){
+				System.out.println(tmp + "- - -");
 			}else{
-				System.out.println();
+				System.out.println(tmp + " " + personajes);
 			}
 			System.out.println("\nFin * * * Contenido del arreglo en Tablero\n");
 		}
 	}
+	public void insertar(Personaje p, int poss)trows PersException{
+		if(poss < 0 or poss > MAX_SIZE){
+			throw new PersException("Indice fuera de rango",pos);
+		}
+	}
+
 }
