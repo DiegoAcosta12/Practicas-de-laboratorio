@@ -1,6 +1,6 @@
 package edu.escuela.gamepz.personajes;
 import java.text.DecimalFormat;
-public abstract class Personaje {
+public abstract class Personaje implements Comparable<Personaje>{
     private String nombre;
     protected int vida;
     private float size;
@@ -14,24 +14,33 @@ public abstract class Personaje {
         this.nombre = nombre;
         this.vida = vida;
     }
+    public int compareTo(Personaje o){
+        if(this.nombre.compareTo(o.nombre) ==  ){
+
+        } 
+    }
     public Personaje(String nombre){
         this(nombre, 3);
     }
-    }
+
     public void setNombre(String nombre){
         if ((nombre.length() > 5) && (nombre.length() < 25)){
             this.nombre = nombre;
         }
     }
+
     public String getNombre(){
         return nombre;
     }
+
     public void saludar(){
         System.out.println("Hola alumno de POO " + nombre);
     }
+
     public int getVida(){
         return vida;
     }
+
     public boolean setVida(int vida){
         if (vida >= 0 && vida < 100){
             this.vida = vida;
