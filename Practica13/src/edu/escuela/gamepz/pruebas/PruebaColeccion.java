@@ -10,17 +10,17 @@ import edu.escuela.gamepz.utils.*;
 public class PruebaColeccion{
 	public static void main(String[] args) {
 		Personaje[] datos = {
-			Planta p1 = new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO);
-			Planta p2 = new Planta("Bianca",Tablero.genVida());
-			Planta p3 = new Planta("Fabian",Tablero.genVida());	
-			Planta p4 = new Planta("Armando",Tablero.genVida(),Escudo.BAJO);	
-			Zombie z1 = new Zombie("Bianca",Tablero.genVida());
-			Planta p5 = new Planta("Dayan",Tablero.genVida());
-			Zombie z2 = new Zombie("Armando",Tablero.genVida(),false);
-			Zombie z3 = new Zombie("Dayan",Tablero.genVida(),true);
-			Zombie z4 = new Zombie("Armando",Tablero.genVida());
+			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO);
+			new Planta("Bianca",Tablero.genVida());
+			new Planta("Fabian",Tablero.genVida());	
+			new Planta("Armando",Tablero.genVida(),Escudo.BAJO);	
+			new Zombie("Bianca",Tablero.genVida());
+			new Planta("Dayan",Tablero.genVida());
+			new Zombie("Armando",Tablero.genVida(),false);
+			new Zombie("Dayan",Tablero.genVida(),true);
+			new Zombie("Armando",Tablero.genVida());
 
-			TreeSet<Personaje> ts = new TreeSet<>();
+			TreeSet<Personaje> arbol = new TreeSet<>();
 			//ts.add(p1);
 			//ts.add(p2);
 			//ts.add(p3);
@@ -36,7 +36,7 @@ public class PruebaColeccion{
 			LinkedList<Personaje>linked = new LinkedList<>();
 			linked.addAll(ts);
 			System.out.println("---Orden Natural---");
-			for (Personaje p :ts ) {
+			for (Personaje p : arbol) {
 				System.out.println(p);
 			}
 			System.out.println("---Orden Vida---");
