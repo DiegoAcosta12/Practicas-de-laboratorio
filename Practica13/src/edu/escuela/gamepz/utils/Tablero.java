@@ -38,4 +38,7 @@ public class Tablero{
 		personajes[poss] = null;
 
 	}
+	public int genVida(int vida){
+		return vida = (int)(Math.random()*10);
+	}
 }
