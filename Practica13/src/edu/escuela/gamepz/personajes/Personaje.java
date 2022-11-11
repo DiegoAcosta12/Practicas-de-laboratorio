@@ -15,12 +15,19 @@ public abstract class Personaje implements Comparable<Personaje>{
         this.vida = vida;
     }
     public int compareTo(Personaje o){
-        if(this.nombre.compareTo(o.nombre) ==  ){
-
+        if(this.nombre.compareTo(o.nombre) != 0 ){
+            return this.nombre.compareTo(o.nombre);
         } 
+        if(this.vida == o.vida){
+            return this.vida - o.vida;
+        }
+        if(this.size == o.size){
+            return 0;
+        }
+        return (o.size == this.size) ? -1 : 1;
     }
     public Personaje(String nombre){
-        this(nombre, 3);
+        this(nombre, 3, 0.0f);
     }
 
     public void setNombre(String nombre){
