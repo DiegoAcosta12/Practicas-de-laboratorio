@@ -39,6 +39,6 @@ public class Tablero{
 
 	}
 	public int genVida(int vida){
-		return vida = (int)(Math.random()*10);
+		return vida = (int)(Math.random()*10 + 1);
 	}
 }

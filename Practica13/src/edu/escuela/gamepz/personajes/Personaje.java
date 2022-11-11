@@ -65,6 +65,10 @@ public abstract class Personaje implements Comparable<Personaje>{
     public abstract void addVida();
 
     public abstract void addVida(int add);
+    
+    public float getSize(){
+        return size;
+    }
 
     public float genSize(){
         float size = (float)(Math.random()*10);
