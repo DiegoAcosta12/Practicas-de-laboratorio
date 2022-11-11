@@ -1,7 +1,6 @@
 package edu.escuela.gamepz.personajes.buenos;
 import edu.escuela.gamepz.personajes.Personaje;
-import edu.escuela.gamepz.utils.Escudo;
-
+import edu.escuela.gamepz.utils.*;
 public class Planta extends Personaje{
     private Escudo escudo;
 
