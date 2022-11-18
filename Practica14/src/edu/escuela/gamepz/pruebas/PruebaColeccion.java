@@ -76,10 +76,12 @@ public class PruebaColeccion{
 		try{
 		FileOutputStream fa = new FileOutputStream(f);
 		FileOutputStream s = new ObjectOutputStream (fa);
-		for ( : ) {
-			
+		for ( Personaje tp: arbol) {
+			s.writeObject(tp);
 		}
-
+		s.close ();
+		}catch (IOException e){
+			e.printStackTrace ();
 		}
 	}
 }
