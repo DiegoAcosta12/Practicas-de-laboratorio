@@ -1,8 +1,9 @@
 //Paquete de la clase personaje(contiene la ruta de las carpetas)
 package edu.escuela.gamepz.personajes; 
 import java.text.DecimalFormat;
+import java.io.Serializable
 
-public abstract class Personaje implements Comparable<Personaje>, seri{
+public abstract class Personaje implements Comparable<Personaje>,Serializable{
 	private String nombre;
 	protected int vida;
 	private float size;

@@ -29,7 +29,6 @@ public class PruebaColeccion{
 			System.exit(0);
 		}
 
-
 		Personaje [] datos = {
 			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO),
 			new Planta("Bianca",Tablero.genVida()),
@@ -48,7 +47,8 @@ public class PruebaColeccion{
 		}
 		lista.addAll(arbol);
 
-
+		guardarObjetos(f,arbol);
+		
 		System.out.println(" - - - Orden Natural - - - ");
 		for (Personaje p:arbol){
 		System.out.println(p);
