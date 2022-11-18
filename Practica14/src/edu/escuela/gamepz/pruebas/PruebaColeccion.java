@@ -4,6 +4,8 @@ import edu.escuela.gamepz.personajes.malos.*;
 import edu.escuela.gamepz.personajes.buenos.*; 
 import edu.escuela.gamepz.utils.*;
 import java.util.TreeSet;
+import java.io.File;	
+import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,8 +13,18 @@ public class PruebaColeccion{
 	public static void main(String[] args) {
 		String path = System.getProperty("user.home") +System.getProperty("file.separator"); 
 		Scanner s = new Scanner(System.in);
+		System.out.print("Escribe el nombre del archivo: ");
 		String fname = "";
+		fname = s.nextLine();
 		path += fname;
+		File f = new File(path);
+		if (f.exists()){
+			System.out.println("El archivo o directorio si existe");
+			System.exit(0);
+		}
+		
+
+
 		Personaje [] datos = {
 			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO),
 			new Planta("Bianca",Tablero.genVida()),
@@ -45,6 +57,6 @@ public class PruebaColeccion{
 		Collections.sort(arr, new BySize());
 		for (Personaje p:arr){
 		System.out.println(p);
-}
+		}	
 	}
 }
