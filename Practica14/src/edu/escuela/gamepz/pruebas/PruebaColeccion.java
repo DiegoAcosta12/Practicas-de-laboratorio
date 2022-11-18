@@ -9,6 +9,7 @@ import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.io.Serializable;
 public class PruebaColeccion{
 	public static void main(String[] args) {
 		String path = System.getProperty("user.home") +System.getProperty("file.separator"); 
@@ -18,7 +19,7 @@ public class PruebaColeccion{
 		fname = s.nextLine();
 		path += fname;
 		File f = new File(path);
-		if (f.exists()){
+		if (f.exists() && f.isFile()){
 			System.out.println("El archivo si existe");
 			System.exit(0);
 		}
@@ -63,13 +64,13 @@ public class PruebaColeccion{
 		System.out.println(p);
 		}	
 	}
-	public static void mostrarDirectorio(File f){
+	private static void mostrarDirectorio(File f){
 		String[] dir = f.list();
-		for (String x: dir){
-			System.out.println(x);		
+		for (String tmp: dir){
+			System.out.println(tmp);		
 		}
 	}
 	private static void guardarObjetos(File f, TreeSet <Personaje> arbol){
-		System.out.println(f + " " + arbol);
+		
 	}
 }
