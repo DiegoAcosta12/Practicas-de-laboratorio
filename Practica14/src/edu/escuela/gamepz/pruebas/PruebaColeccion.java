@@ -47,6 +47,8 @@ public class PruebaColeccion{
 			arbol.add(personajes);
 		}
 		lista.addAll(arbol);
+
+
 		System.out.println(" - - - Orden Natural - - - ");
 		for (Personaje p:arbol){
 		System.out.println(p);
@@ -71,6 +73,13 @@ public class PruebaColeccion{
 		}
 	}
 	private static void guardarObjetos(File f, TreeSet <Personaje> arbol){
-		
+		try{
+		FileOutputStream fa = new FileOutputStream(f);
+		FileOutputStream s = new ObjectOutputStream (fa);
+		for ( : ) {
+			
+		}
+
+		}
 	}
 }
