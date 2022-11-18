@@ -19,10 +19,16 @@ public class PruebaColeccion{
 		path += fname;
 		File f = new File(path);
 		if (f.exists()){
-			System.out.println("El archivo o directorio si existe");
+			System.out.println("El archivo si existe");
 			System.exit(0);
 		}
-		
+		if (f.isDirectory()){
+			f.mostrarDirectorio();			
+			System.out.println("Es un directorio");
+			System.exit(0);
+		}
+
+
 
 
 		Personaje [] datos = {
@@ -58,5 +64,8 @@ public class PruebaColeccion{
 		for (Personaje p:arr){
 		System.out.println(p);
 		}	
+	}
+	private static void mostrarDirectorio(File f){
+		System.out.println(f);
 	}
 }
