@@ -23,12 +23,10 @@ public class PruebaColeccion{
 			System.exit(0);
 		}
 		if (f.isDirectory()){
-			f.mostrarDirectorio();			
+			mostrarDirectorio(f);		
 			System.out.println("Es un directorio");
 			System.exit(0);
 		}
-
-
 
 
 		Personaje [] datos = {
@@ -65,7 +63,13 @@ public class PruebaColeccion{
 		System.out.println(p);
 		}	
 	}
-	private static void mostrarDirectorio(File f){
-		System.out.println(f);
+	public static void mostrarDirectorio(File f){
+		String[] dir = f.list();
+		for (String x: dir){
+			System.out.println(x);		
+		}
+	}
+	private static void guardarObjetos(File f, TreeSet <Personaje> arbol){
+		System.out.println(f + " " + arbol);
 	}
 }
