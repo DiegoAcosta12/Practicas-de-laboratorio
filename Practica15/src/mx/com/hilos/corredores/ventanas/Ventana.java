@@ -1,3 +1,4 @@
+package mx.com.hilos.corredores.ventana;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -23,9 +24,18 @@ public class Ventana extends JFrame{
 		lblTitulo = new JLabel("*Practica 15 Manejo de hilos *");
 		lblTitulo.setPreferredSize(lblDim);
 		lblElem1 = new JLabel("Hilo 1");
-		lblElem1 = new JTextField(3);
+		txtElem1 = new JTextField(3);
 		lblElem2 = new JLabel("Hilo 2");
-		lblElem2 = new JTextField(3);
-		btnStart = new
+		txtElem2 = new JTextField(3);
+		btnStart = new JButton("Comenzar"){
+			public void actionPerformed(ActionEvent e){
+
+			}
+		}
+		hElem1 = new JLabel("Aqui va el hilo 1");
+		hElem1.setBorder(BorderFactory.createLineBorder(border));
+		hElem1.setPreferredSize(lblDim);
+		btnStart.setPreferredSize(lblDim);
 	}
+
 }
