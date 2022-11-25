@@ -1,4 +1,5 @@
 package mx.com.hilos.corredores.ventanas;
+import mx.com.hilos.corredores.hilos.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -43,7 +44,7 @@ public class Ventana extends JFrame{
 		btnStart.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				btnStart.setEnabled(false);
-				//RunHilos.iniciar();
+				RunHilos.iniciar(txtElem1,txtElem2,hElem1,hElem2);
 			}
 		});
 
