@@ -1,4 +1,5 @@
 package mx.com.hilos.corredores.hilos;
+import mx.com.hilos.corredores.hilos.*;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 
@@ -15,9 +16,18 @@ public class RunHilos{
 			ch2 = 'M';
 		}
 
-		String salida1 = " " + ch1;
-		String salida2 = " " + ch2
+		String salida1 = String.valueOf(ch1); 
+		String salida2 = String.valueOf(ch2);
 
+		elem1.setText(salida1);
+		elem2.setText(salida2);
 
+		Letra hilo1 = new Letra(elem1, ch1);
+		Letra hilo2 = new Letra(elem2, ch2);
+
+		Thread run1 = new Thread(hilo1);
+		Thread run2 = new Thread(hilo2);
+		run1.start();
+		run2.start();
 	}
 }
