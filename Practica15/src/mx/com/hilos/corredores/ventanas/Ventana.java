@@ -34,7 +34,11 @@ public class Ventana extends JFrame{
 		hElem1 = new JLabel("Aqui va el hilo 1");
 		hElem1.setBorder(BorderFactory.createLineBorder(border));
 		hElem1.setPreferredSize(lblDim);
+		hElem2 = new JLabel("Aqui va el hilo 2");
+		hElem2.setBorder(BorderFactory.createLineBorder(border));
+		hElem2.setPreferredSize(lblDim);
 		btnStart.setPreferredSize(lblDim);
+
 
 		btnStart.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
