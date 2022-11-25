@@ -15,10 +15,11 @@ public class Ventana extends JFrame{
 	private JButton btnStart;
 	
 	public Ventana(){
-		inliComponents();
+		initComponents();
 	}
 
-	public void inliComponents(){
+	public void initComponents(){
+		
 		int ancho = 550;
 		int alto = 250;
 		Dimension lblDim = new Dimension(ancho-15,alto/10);
