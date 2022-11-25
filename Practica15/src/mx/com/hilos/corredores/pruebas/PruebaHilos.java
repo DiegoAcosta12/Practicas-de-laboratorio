@@ -1,4 +1,5 @@
 package mx.com.hilos.corredores.pruebas;
+import mx.com.hilos.corredores.hilos.*;
 import mx.com.hilos.corredores.ventanas.Ventana;
 import mx.com.hilos.corredores.hilos.*; 
 public class PruebaHilos{
